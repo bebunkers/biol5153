@@ -1,0 +1,31 @@
+Blythe Bunkers homework1
+#assn01-1
+grep -rl nad watermelon_aa
+
+#assn01-2
+top
+5.2% CPU
+MemRegions: 116622 total, 2221M resident, 80M private, 409M shared
+PhysMem: 8115M used (3092M wired), 76M unused
+
+#assn01-3
+grep IR watermelon.gff > IR_regions.gff
+ls IR_regions.gff
+cat IR_regions.gff
+sort -r IR_regions.gff
+
+#assn01-4
+grep chloroplast watermelon.gff | grep -cv IR
+25
+grep chloroplast watermelon.gff | grep -c IR
+3
+#there are more outside
+
+#assn01-5
+grep -r GGATCC | grep -v AATT
+
+#assn01-6
+head -n 1000 shaver_etal.csv | tail -n 500
+
+#assn01-7
+column -t fruit.txt | sort -k2r,2 -k3
